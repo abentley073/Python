@@ -1,0 +1,37 @@
+import random
+import time
+# I import random and time as I use both of them
+answers = random.randint(1, 9)
+# This predetermines the answer you get before you even ask the question on startup
+question = str(input("Ask the Magic 8 ball a question: "))
+# I only store this input in case they do not put anything in the question box at all
+time.sleep(5)
+
+print("Searching for an answer.")
+
+time.sleep(1)
+
+print("Please be patient")
+
+time.sleep(3)
+# The code below is what shows the answers you get. If you do not input anything, you get a unique output, otherwise you get a random response ranging from affirmation, very indirect, and negative
+if question == "":
+    print("We cannot give you an answer if you do not ask a question.")
+elif answers == 1:
+    print("It is decidedly so.")
+elif answers == 2:
+    print("Most likely.")
+elif answers == 3:
+    print("Signs point to yes.")
+elif answers == 4:
+    print("Reply hazy, try again.")
+elif answers == 5:
+    print("Better not tell you now.")
+elif answers == 6:
+    print("Cannot predict now.")
+elif answers == 7:
+    print("My reply is no.")
+elif answers == 8:
+    print("My sources say no.")
+elif answers == 9:
+    print("Very doubtful.")
